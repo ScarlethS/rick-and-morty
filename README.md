@@ -1,4 +1,4 @@
-# Rick and Morty API with REACT :atom: 
+# Rick and Morty API with REACT
 
 ## Welcome! 👋
 
