@@ -9,7 +9,7 @@ This is an application to consume the rick and morty API and display the data in
 Clone the project
 
 ```bash
-  git clone [[https://rick-and-morty](https://github.com/ScarlethS/rick-and-morty/)]
+  git clone [https://rick-and-morty](https://github.com/ScarlethS/rick-and-morty/]
 ```
 
 Go to the project directory
