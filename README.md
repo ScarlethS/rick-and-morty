@@ -26,6 +26,12 @@ Install dependencies
 
 NOTE: You'll need to do this any time package.json or package.lock changes.
 
+Open Visual code 
+ 
+ ```bash
+ code .
+```
+
 To start the project please use the next command:
 ```
 npm run dev
