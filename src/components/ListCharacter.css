@@ -1,0 +1,110 @@
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3rem;
+    margin: 3rem 1em;
+}
+
+.cards{
+    background-color: #3C3E44;
+    max-width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 42em;
+    transition: transform .2s ease-in-out;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 11px #000000;    
+}
+
+.character-image{
+    width: 100%;
+}
+
+.container-info{
+    padding: 1rem;
+}
+
+.container-info p{
+    margin: 0;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    font-size: 1rem;
+}
+
+.container-info .name{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.container-info .status p{
+    text-align: center;
+    margin: 5px 0;
+}
+.container-info .alive{
+    background-color: #55CC44;
+    border-radius: 5px;
+}
+
+.status .dead{
+    background-color: #DC3545;
+    border-radius: 5px;
+}
+
+.status .unknow{
+    background-color: #898989;
+    border-radius: 5px;
+}
+
+
+.search{
+    text-align: center;
+}
+
+
+.search-box-input{
+    height: 50px;
+    width: 125px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 1rem;
+}
+
+.search-button{
+    height: 50px;
+    width: 80px;
+    border-radius: 0 15px 15px 0;
+    background-color: #6495ed;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: #464548;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .container-cards{
+        grid-template-columns: repeat(2,1fr);
+        margin: 3rem 0;
+    }
+
+    .search-box-input{
+        min-width: 400px;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+    .container-cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

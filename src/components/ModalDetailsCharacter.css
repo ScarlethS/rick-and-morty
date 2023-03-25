@@ -1,0 +1,61 @@
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+.modal{
+    width: 250px;
+    height: 520px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    z-index: -1;
+    color: black;
+}
+
+.modal-content button{
+    background-color: red;
+    color: white;
+    float: right;
+}
+
+.container-details-character{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-name{
+    text-align: center;
+}
+
+.content-details span{
+    font-weight: bold;
+}
+
+.details-status{
+    background-color: #55CC44;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .modal{
+        width: 500px; 
+    }
+}
