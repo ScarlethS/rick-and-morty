@@ -19,7 +19,7 @@ export const ModalDetailsCharacter = ({ closeModal }) => {
                 <h2 className="card-name">Rick Sanchez</h2>
                 <img
                   src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-                  alt=""
+                  alt="Rick Sanchez"
                   className="card-image"
                 />
                 <div className="content-details">

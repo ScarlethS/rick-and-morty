@@ -20,9 +20,8 @@ const ListCharacteres = ({ character, setSearchName, searchName }) => {
           onChange={handleInputSearch}
         />
       </div>
-
       <div className="container-cards">
-        {character ? (
+        {character &&
           character.map((item) => (
             <div className="cards" key={item.id}>
               <div className="container-info">
@@ -31,6 +30,7 @@ const ListCharacteres = ({ character, setSearchName, searchName }) => {
                 </div>
                 <img
                   className="character-image"
+                  alt={item.name}
                   src={item.image}
                   onClick={() => {
                     setShowModal(true);
@@ -55,11 +55,13 @@ const ListCharacteres = ({ character, setSearchName, searchName }) => {
                 </div>
               </div>
             </div>
-          ))
-        ) : (
-          <p>There is nothing here</p>
-        )}
+          ))}
       </div>
+      {!character && (
+        <div className="container-not-found">
+          <h2>There is nothing here</h2>
+        </div>
+      )}
       {showModal && <ModalDetailsCharacter closeModal={setShowModal} />}
     </>
   );

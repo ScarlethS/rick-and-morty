@@ -40,8 +40,6 @@
     text-align: center;
 }
 
-
-
 .container-info .status p{
     text-align: center;
     margin: 5px 0;
@@ -88,6 +86,10 @@
 .search-button:hover{
     background-color: #464548;
     color: white;
+}
+
+.container-not-found h2{
+    text-align: center;
 }
 
 @media (min-width: 768px){
